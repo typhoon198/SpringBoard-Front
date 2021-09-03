@@ -1,0 +1,54 @@
+table.detail td, table.detail tr {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+table.detail {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+
+td.left {
+	width: 20%;
+	background-color: #f2f2f2;
+}
+
+td#detailContent {
+	min-height: 200px;
+}
+
+td#detailContent {
+	min-height: 200px;
+}
+
+div.replyview, div.reply {
+	clear: both;
+}
+
+.collapsible {
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
+.active, .collapsible:hover {
+	background-color: #555;
+}
+
+div.replycontent {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+
+img#upImg {
+	width: 500px;
+}

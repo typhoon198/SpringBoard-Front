@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="./css/detail.css" />
+<link rel="stylesheet" href="./css/write.css" />
+<!-- 답글쓰기 -->
+
+<script src="./js/detail.js"></script>
+
+<h2>글보기</h2>
+<table class="detail">
+    <tr>
+        <td class="left">글번호</td>
+        <td id="detailNo"></td>
+        <td class="left">작성일</td>
+        <td id="detailDt"></td>
+    </tr>
+    <tr>
+        <td class="left">작성자ID</td>
+        <td id="detailId"></td>
+        <td class="left">조회수</td>
+        <td id="detailViewcount"></td>
+    </tr>
+    <tr>
+        <td class="left">글제목</td>
+        <td colspan="3">
+            <input id="detailTitle" type="text" readonly/>
+        </td>
+    <tr>
+        <td class="left">글내용</td>
+        <td colspan="3">
+            <textarea id="detailContent" readonly></textarea>
+        </td>
+
+    </tr>
+    <tr class="viewImg" style="display: none">
+        <td class="left">이미지</td>
+        <td colspan="3">
+            <form class="down" method="get" action="/boardrestspring/download">
+            <input id="imgname" type="hidden" name="name">
+            <button id="downImg" type="submit">다운로드</button>
+            </form>
+            <img src="" id="upImg" alt="파일없음" />
+
+        </td>
+
+    </tr>
+
+</table>
+
+<div class="replyview" style="display: none">
+
+</div>
+<div class="reply" style="display: none">
+    <h3>답글쓰기</h3>
+    <form class="reply">
+        <div class="row title">
+            <div class="col-20">
+                <label>제목</label>
+            </div>
+            <div class="col-80">
+                <input type="text" name="boardTitle" placeholder="제목입력" required>
+            </div>
+        </div>
+        <div class="row boardContent">
+            <div class="col-20">
+                <label>내용</label>
+            </div>
+            <div class="col-80">
+                <textarea name="boardContent" placeholder="내용입력" rows="10" required></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <input class="reply" type="submit" value="작성하기">
+        </div>
+    </form>
+</div>
+
+
+<button class="hide remove">게시글 삭제</button>
+<button class="hide modify">게시글 수정</button>
+<button class="hide reply">답글쓰기열기</button>
+<button class="put" style="display: none">수정하기</button>
+<button class="delete" style="display: none">삭제하기</button>

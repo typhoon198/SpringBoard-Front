@@ -1,0 +1,53 @@
+table.boardlist {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
+}
+
+table.boardlist th, table.boardlist td {
+	text-align: left;
+	padding: 16px;
+}
+
+table.boardlist tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+table.boardlist td {
+	width: 80px;
+}
+
+table.boardlist td.boardTitle {
+	width: 200px;
+}
+
+table.boardlist td.boardDt {
+	width: 100px;
+}
+
+div.search input[name=word] {
+	float: right;
+	width: 20%;
+}
+
+div.pagination {
+	float: left;
+}
+
+div.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+}
+
+div.pagination a.active {
+	background-color: dodgerblue;
+	color: white;
+}
+
+div.pagination a:hover:not(.active) {
+	background-color: #ddd;
+}

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="./css/boardlist.css" />
+<script src="./js/boardlist.js"></script>
+
+<table class="boardlist">
+    <tr>
+        <th>번호</th>
+        <th>제목</th>
+        <th>작성자id</th>
+        <th>게시일</th>
+        <th>조회수</th>
+    </tr>
+
+    <tr class="list" style="display: none">
+        <td class="boardNo"></td>
+        <td class="boardTitle"><a href="" class="view"></a></td>
+        <td class="boardCId"></td>
+        <td class="boardDt"></td>
+        <td class="boardViewcount"></td>
+    </tr>
+
+</table>
+
+<div class="search">
+    <form class="search">
+        <input class="search" type="submit" value="검색">
+        <input type="text" name="word" placeholder="검색어 입력" required>
+    </form>
+</div>
